@@ -19,7 +19,7 @@ const cursor = document.getElementById('cursor');
     el.addEventListener('mouseleave', () => ring.classList.remove('expand'));
   });
 
-  // Scroll reveal
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); }
@@ -27,7 +27,7 @@ const cursor = document.getElementById('cursor');
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Skill bars
+  
   const skillObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
