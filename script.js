@@ -38,3 +38,4 @@ const cursor = document.getElementById('cursor');
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   document.querySelectorAll('#sobre').forEach(el => skillObs.observe(el));
+  
