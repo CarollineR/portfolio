@@ -24,7 +24,7 @@ const cursor = document.getElementById('cursor');
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   
@@ -36,5 +36,5 @@ const cursor = document.getElementById('cursor');
         });
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   document.querySelectorAll('#sobre').forEach(el => skillObs.observe(el));
