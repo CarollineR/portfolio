@@ -63,7 +63,7 @@ align-items: center;
 .nav-logo { 
 font-family: var(--font-mono); 
 font-size: 0.82rem; 
-color: var(--text); 
+color: var(--accent1); 
 letter-spacing: 0.08em; 
 }
 
@@ -116,7 +116,7 @@ transform: translateY(-6px) rotate(-45deg);
 }
 
 .mobile-menu {
-display: flex; 
+display: none; 
 flex-direction: column;
 background: var(--bg); 
 border-bottom: 1px solid var(--border);
@@ -677,7 +677,8 @@ color: var(--text);
 }
 
 .contact-title span { 
-display: block; 
+display: block;
+color: var(--accent1); 
 }
 
 .contact-sub { 
@@ -717,7 +718,7 @@ padding: 2.5rem 0;
 border-top: 1px solid var(--border); 
 font-family: var(--font-mono); 
 font-size: 0.68rem; 
-color: var(--muted); 
+color: var(--accent1); 
 }
 
 footer > .container { 
@@ -853,9 +854,10 @@ align-items: center;
 }
 
 footer > .container { 
-flex-direction: column; 
-gap: 0.75rem; 
+flex-direction: row; 
+justify-content: center;
+flex-wrap: wrap;
+gap: 0.35rem; 
 text-align: center;
-padding: 0 1.25rem; 
 }
 }
