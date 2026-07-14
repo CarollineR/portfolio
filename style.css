@@ -1,21 +1,22 @@
 :root {
-    --bg: #0d0b12;
-    --surface: #13111c;
-    --surface2: #1a1726;
-    --accent1: #c084fc;
-    --accent2: #f472b6;
-    --text: #f0eaf8;
-    --muted: #8b8598;
-    --border: #29273a;
+    --bg: #0D0B12;
+    --surface: #13111C;
+    --surface2: #1A1726;
+    --text: #F3F3F3;
+    --muted: #9A96A3;
+    --accent1: #B76E79;
+    --accent2: #D7B49E;
+    --border: #2A2735;
+    --shadow: rgba(183, 110, 121, 0.25);
     --font-display: 'Fraunces', serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-  }
+}
 
   *, *::before, *::after { 
-  box-sizing: border-box; 
-  margin: 0; 
-  padding: 0; 
+box-sizing: border-box; 
+margin: 0; 
+padding: 0; 
 }
 
 html { 
@@ -373,7 +374,7 @@ animation: blink 0.8s steps(1) infinite;
   
 @keyframes avatarFloat { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
 
-/* Skills bar */
+/*Skillsbar*/
 .skills-bar {
 padding: 2.2rem 4rem;
 border-top: 1px solid var(--border); 
@@ -408,7 +409,7 @@ color: var(--muted);
 
 @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-33.333%); } }
 
-/* Section headers */
+/*Section*/
 .section-label {
 font-family: var(--font-mono); 
 font-size: 0.7rem; 
@@ -446,7 +447,7 @@ font-style: italic;
 color: var(--accent1); 
 }
 
-/* About */
+/*Sobre*/
 #sobre {
 padding: 10rem 0; 
 }
@@ -512,12 +513,12 @@ gap: 1.1rem;
 }
 
 .skill-name { 
-  font-family: var(--font-mono); 
-  font-size: 0.74rem; 
-  color: var(--muted); 
-  width: 80px; 
-  text-align: right; 
-  flex-shrink: 0; 
+font-family: var(--font-mono); 
+font-size: 0.74rem; 
+color: var(--muted); 
+width: 80px; 
+text-align: right; 
+flex-shrink: 0; 
 }
 
 .skill-bar-wrap { 
@@ -536,7 +537,7 @@ width: 0;
 transition: width 1.2s cubic-bezier(0.4,0,0.2,1); 
 opacity: 0.8; }
 
-/* Projects */
+/* Projetos */
 #projetos { 
 padding: 10rem 0; 
 border-top: 1px solid var(--border); 
@@ -594,11 +595,11 @@ border-bottom: 1px solid var(--border);
 }
 
 .project-title { 
-  font-family: var(--font-display); 
-  font-optical-sizing: auto; 
-  font-size: 1.3rem; 
-  font-weight: 500; 
-  line-height: 1.25; 
+font-family: var(--font-display); 
+font-optical-sizing: auto; 
+font-size: 1.3rem; 
+font-weight: 500; 
+line-height: 1.25; 
 }
 
 .project-desc { 
@@ -722,7 +723,7 @@ color: var(--muted);
 
 footer > .container { 
 display: flex; 
--content: space-between; 
+justify-content: space-between; 
 align-items: center; 
 }
 
