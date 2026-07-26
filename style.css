@@ -757,6 +757,10 @@ display: none;
 display: flex; 
 }
 
+.mobile-menu {
+    display: flex;
+}
+
 .hero { 
 padding: 7rem 0 3.5rem; 
 }
