@@ -485,7 +485,8 @@ color: var(--accent1);
   color: var(--muted); 
   line-height: 1.95; 
   font-size: 0.98rem; 
-  margin-bottom: 1.6rem; 
+  margin-bottom: 1.6rem;
+  text-align: justify; 
 }
 
 .about-stats { 
