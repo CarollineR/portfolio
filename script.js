@@ -40,7 +40,7 @@ if (hamburger && mobileMenu) {
 
 const projectCards = document.querySelectorAll(".project-card");
 
-if (projectCards.length) {
+if (projectCards.length && window.innerWidth <= 768) {
   const projectObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
