@@ -903,7 +903,7 @@ grid-template-columns: repeat(2, 1fr);
   .project-card.is-active {
   border-color: var(--border);
   transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(42, 39, 53, 0.15);
+  box-shadow: 0 0 20px rgba(42, 39, 53, 0.5);
 }
 
 .project-card.is-active .project-num {
