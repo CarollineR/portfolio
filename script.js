@@ -37,3 +37,28 @@ if (hamburger && mobileMenu) {
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('#sobre').forEach(el => skillObs.observe(el));
+
+const projectCards = document.querySelectorAll(".project-card");
+
+if (projectCards.length) {
+  const projectObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          projectCards.forEach((card) => {
+            card.classList.remove("is-active");
+          });
+
+          entry.target.classList.add("is-active");
+        }
+      });
+    },
+    {
+      threshold: 0.6
+    }
+  );
+
+  projectCards.forEach((card) => {
+    projectObserver.observe(card);
+  });
+}
