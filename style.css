@@ -900,6 +900,16 @@ grid-template-columns: repeat(2, 1fr);
     grid-template-columns: 1fr;
   }
 
+  .project-card.is-active {
+  border-color: var(--accent2);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(215, 180, 158, 0.15);
+}
+
+.project-card.is-active .project-num {
+  color: var(--accent2);
+}
+
   #contato {
     padding: 5rem 1.25rem;
   }
